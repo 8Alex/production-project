@@ -1,8 +1,15 @@
+import { useState } from 'react';
 import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton';
 import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
     const { t } = useTranslation();
+
+    // const [value, setValue] = useState('');
+
+    // const onChange = (val: string) => {
+    //     setValue(val);
+    // };
 
     return (
         <div>
