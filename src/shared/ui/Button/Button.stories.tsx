@@ -64,6 +64,8 @@ export const OutlineDark: Story = {
     },
 };
 
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
+
 export const BackgroundTheme: Story = {
     args: {
         children: 'Text',
@@ -104,4 +106,10 @@ export const SquareSizeXl: Story = {
     },
 };
 
-OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
+export const Disabled: Story = {
+    args: {
+        children: '>',
+        theme: ButtonTheme.OUTLINE,
+        disabled: true,
+    },
+};
